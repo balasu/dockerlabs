@@ -18,7 +18,7 @@ gem "search_cop"
 gem "kaminari"
 gem "crono"
 gem "net-ldap"
-gem "redcarpet"
+gem "redcarpet", ">= 3.5.1"
 gem "font-awesome-rails"
 gem "rails_stdout_logging", "~> 0.0.5", group: [:development, :staging, :production]
 gem "webpack-rails"
@@ -86,7 +86,7 @@ unless packaging?
     gem "rubocop", "~> 0.41.2", require: false
     gem "brakeman", require: false
     gem "database_cleaner"
-    gem "md2man", "~>5.1.1", require: false
+    gem "md2man", "~> 5.1.1", require: false
     gem "binman", "~>5.1.0"
     gem "phantomjs", "~> 2.1.1.0"
   end
